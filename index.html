@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Memóriajáték</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Memóriajáték</h1>
+    <div class="info">
+        <p>Lépések: <span id="lepesek">0</span></p>
+        <p>Idő: <span id="ido">0</span> mp</p>
+    </div>
+    <button onclick="ujJatek()">Új játék</button>
+    <div class="menu">
+        <label for="szint">Szint:</label>
+        <select id="szint">
+            <option value="4">Level 1 - 4x4</option>
+            <option value="6">Level 2 - 6x6</option>
+            <option value="8">Level 3 - 8x8</option>
+            <option value="10">Level 4 - 10x10</option>
+            <option value="12">Level 5 - 12x12</option>
+        </select>
+    </div>
+    <p id="uzenet"></p>
+
+    <div id="jatek"></div>
+    <script src="main.js"></script>
+</body>
+
+</html>
